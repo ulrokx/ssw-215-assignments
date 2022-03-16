@@ -1,0 +1,101 @@
+
+/* I pledge that I have abided by the Stevens Honor System */
+/* Richard Kirk Week 2 Assignment SSW-225 */
+body {
+    background-color: linen;
+    --green-700: rgb(6,97,4)
+}
+
+h1 {
+    color: var(--green-700);
+    margin-left: 40px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+#coffeetitle {
+    color: brown;
+}
+
+#shoptitle {
+    color: darkcyan;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.gap-x-15px {
+    column-gap: 15px
+}
+
+.greenbutton {
+    background-color: white;
+    padding: 6px 6px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid var(--green-700);
+    border-radius: 6px;
+    font: 1.25rem sans-serif;
+}
+
+.greenbutton:hover {
+    background-color: var(--green-700);
+    color: white;
+}
+
+.dotless {
+    list-style-type: none;
+}
+
+.squarebullet {
+    list-style-type: square;
+}
+
+img {
+    border: 5px solid var(--green-700)
+}
+
+h3:nth-of-type(1) {
+    color: #066104;
+}
+
+h3:nth-of-type(2) {
+    color: hsl(119,92%,20%)
+}
+
+h3:nth-of-type(3) {
+    color: green;
+}
+
+ol li:nth-of-type(2) {
+    text-decoration: line-through;
+}
+
+ol li:nth-of-type(3) {
+    color: red;
+}
+
+#priceheader {
+    text-align: center;
+    color: maroon;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: auto;
+}
+
+#email {
+    font: 14px "Times", serif;
+    color: red;
+}
+
+#phone {
+    font: 16px "Courier New", monospace;
+    color: cyan;
+}

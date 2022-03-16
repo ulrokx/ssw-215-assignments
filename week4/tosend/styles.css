@@ -1,0 +1,168 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: bisque;
+    margin: auto;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: deeppink;
+    font-size: xx-large;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+    user-select: none;
+}
+
+table,
+tr,
+td {
+    border: 1px solid slategray;
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.orderbtn {
+    margin: auto;
+    display: block;
+    padding: 1.5rem 3rem;
+}
+
+.bfmenu {
+    color: #a52a2a;
+}
+
+.lnmenu {
+    color: rgb(0, 105, 211);
+}
+
+.dnmenu {
+    color: hsl(244, 80%, 20%);
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    column-gap: 1rem;
+}
+
+#nav-ul > li > a {
+    text-decoration: none;
+    background-color: royalblue;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    border-width: 2px;
+    border: solid darkblue;
+    user-select: none;
+}
+
+#nav-ul > li > a:hover {
+    background-color: blue;
+}
+
+.nav-select {
+    background-color:lightgreen !important;
+    color:darkblue !important;
+}
+
+.nav-select:hover {
+    background-color: green !important;
+}
+
+#cart {
+    width: 50%;
+    margin: 0px auto;
+    visibility: hidden;
+}
+
+#price {
+    visibility: hidden;
+}
+
+#price-text {
+    visibility: hidden;
+    text-align: center;
+    font-size: x-large;
+    margin: 1rem;
+}
+
+tr > td > button {
+    text-decoration: none;
+    background-color: royalblue;
+    color: white;
+    padding: 0.5rem .5rem;
+    font-weight: 600;
+    transition: 0.3s;
+    border-width: 2px;
+    border: solid darkblue;
+    margin: 5px;
+}
+tr > td > button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+/* contact form */
+label {
+    align-self: flex-start;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+input, textarea {
+ width: 100%;
+ padding: 10px 8px;
+ border: 2px solid grey;
+ border-radius: 25px;
+ font-weight: 600;
+ font-size: large;
+ resize: none;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#thank-you {
+    visibility: hidden;
+}
+
+.blue-btn {
+    text-decoration: none;
+    background-color: royalblue;
+    color: white;
+    padding: 0.5rem .5rem;
+    font-weight: 600;
+    transition: 0.3s;
+    border-width: 2px;
+    border: solid darkblue;
+    margin: 5px;
+}
+.blue-btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}

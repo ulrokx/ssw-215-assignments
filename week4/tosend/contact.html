@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>EggRick, Stevens Campus</h1>
+        <nav>
+            <ul id="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#" class="nav-select">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="col">
+            <h2>How to Reach Us</h2>
+            <p>
+                Email us at
+                <a href="mailto:rick@eggrick.com"
+                    >rick@eggrick.com</a
+                >
+                or call us at
+                <a href="tel:7138644122">7138644122</a>
+            </p>
+            <p>
+                We are located at 1 Castle Point Terrace, Hoboken
+                NJ 07030
+            </p>
+        </div>
+        <div class="col">
+            <form class="col">
+                <label for="f-name">Name</label>
+                <input type="text" name="name" id="f-name" />
+                <label for="f-phone">Phone</label>
+                <input type="tel" name="phone" id="f-phone" />
+                <label for="f-email">Email</label>
+                <input type="text" name="email" id="f-email" />
+                <label for="f-message">Message</label>
+                <textarea
+                    name="message"
+                    id="f-message"
+                    cols="30"
+                    rows="3"
+                ></textarea>
+                <button type="button" class="blue-btn" id="contact-form-submit">Send Message</button>
+                <p id="thank-you">Your message has been received and we will respond to you shortly.</p>
+            </form>
+        </div>
+        <script>
+            const submitBtn = document.getElementById("contact-form-submit")
+            const thankYou = document.getElementById("thank-you")
+            const fields = document.querySelectorAll("input, textarea")
+            submitBtn.addEventListener("click", (_) => {
+                submitBtn.style.display = "none";
+                thankYou.style.visibility = "visible"
+                fields.forEach(f => f.disabled = true)
+            })
+        </script>
+    </body>
+</html>

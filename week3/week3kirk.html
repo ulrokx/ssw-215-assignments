@@ -1,0 +1,361 @@
+<html>
+    <head>
+        <title>CoffeeShop, Hoboken</title>
+        <style>
+            body {
+                background-color: linen;
+            }
+            h1 {
+                color: #066104;
+                text-align: center;
+            }
+            #coffee {
+                color: brown;
+            }
+            #shop {
+                color: red;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            h1,
+            h2,
+            h3 {
+                text-align: center;
+            }
+            ul.nav {
+                text-align: center;
+            }
+            ul.nav > li {
+                display: inline-block;
+                background-color: white;
+                margin: 15px;
+                border: 2px solid green;
+                padding: 5px;
+            }
+            ul.nav > li:hover {
+                background-color: green;
+            }
+            ul.nav > li > a:link {
+                color: black;
+                text-decoration: none;
+            }
+            ul.nav > li > a:hover {
+                color: white;
+                text-decoration: none;
+            }
+            ul.nav > li > a:visited {
+                color: none;
+                text-decoration: none;
+            }
+            img {
+                border: 5px solid linen;
+                border-radius: 20%;
+            }
+            ul {
+                list-style-type: square;
+            }
+            p {
+                text-align: justify;
+            }
+            h3.one {
+                color: #066104;
+            }
+            h3.two {
+                color: hsl(119, 92%, 20%);
+            }
+            h3.three {
+                color: green;
+            }
+            .strike {
+                text-decoration: line-through;
+            }
+            .red {
+                color: red;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid chocolate;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h4 {
+                text-align: center;
+                color: maroon;
+            }
+            #email {
+                font-size: 16px;
+                font-family: "Times New Roman";
+                color: red;
+            }
+            #phone {
+                font-size: 16px;
+                font-family: "Times New Roman";
+                color: rgb(255, 0, 0);
+            }
+
+            footer,
+            footer > p {
+                width: 100%;
+                bottom: 0px;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .btn {
+                border: none;
+                color: white;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .success {
+                background-color: #04aa6d;
+            } /* Green */
+            .success:hover {
+                background-color: #46a049;
+            }
+
+            .info {
+                background-color: #2196f3;
+            } /* Blue */
+            .info:hover {
+                background: #0b7dda;
+            }
+
+            .warning {
+                background-color: #ff9800;
+            } /* Orange */
+            .warning:hover {
+                background: #e68a00;
+            }
+
+            .danger {
+                background-color: #f44336;
+            } /* Red */
+            .danger:hover {
+                background: #da190b;
+            }
+
+            .default {
+                background-color: #e7e7e7;
+                color: black;
+            } /* Gray */
+            .default:hover {
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <hr width="150px" />
+        <h1>
+            Welcome to <span id="coffee">Coffee</span
+            ><span id="shop">Shop</span>, Hoboken
+        </h1>
+        <hr width="150px" />
+        <ul class="nav">
+            <li>
+                <a href="https://www.starbucks.com/menu">Home</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.starbucks.com/menu/featured/"
+                    >Place Orders</a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z"
+                >
+                    Contact Us</a
+                >
+            </li>
+        </ul>
+
+        <h2>Brief Information About our Company</h2>
+
+        <p>
+            Starbucks Corporation is an American multinational
+            chain of coffeehouses and roastery reserves
+            headquartered in Seattle, Washington. It is the
+            world's largest coffeehouse chain. As of November
+            2021, the company had 33,833 stores in 80 countries,
+            15,444 of which were located in the United States.
+            Out of Starbucks' U.S.-based stores, over 8,900 are
+            company-operated, while the remainder are licensed.
+            The rise of the second wave of coffee culture is
+            generally attributed to Starbucks, which introduced a
+            wider variety of coffee experiences. Starbucks serves
+            hot and cold drinks, whole-bean coffee, micro-ground
+            instant coffee, espresso, caffe latte, full and
+            loose-leaf teas, juices, Frappuccino beverages,
+            pastries, and snacks. Some offerings are seasonal, or
+            specific to the locality of the store. Depending on
+            the country, most locations offer free Wi-Fi.
+        </p>
+
+        <img
+            src="https://i.ibb.co/1msY54r/demo.webp"
+            alt="Best Coffee Shop In Hoboken"
+            class="center"
+        />
+        <button id="message" class="center">Special message to customers</button>
+        <script>
+          const btn = document.getElementById("message")
+          btn.classList.add("btn", "info")
+          btn.addEventListener("click", (e) => alert("Thank you for keeping us in business with your continuous patronage, you are valued as our customer."))
+        </script>
+        <h3 class="one">Our main menu categories are:</h3>
+        <script>
+            const catagories = [
+                "Drinks",
+                "Foods",
+                "Homemade Coffee",
+            ];
+            const title = document.querySelector(".one");
+            title.insertAdjacentHTML(
+                "afterend",
+                '<ul id="catagories"></ul>'
+            );
+            const ul = document.getElementById("catagories");
+            catagories.forEach((c) => {
+                const li = document.createElement("li");
+                li.innerHTML = c;
+                ul.appendChild(li);
+            });
+        </script>
+        <h3 class="two">
+            Our customers' top three favorite Hot Coffees are:
+        </h3>
+        <script>
+            const favorites = [
+                { name: "Veranda Blend", class: "" },
+                { name: "Cappuccino", class: "strike" },
+                { name: "Espresso", class: "red" },
+            ];
+            const favTitle = document.querySelector(".two");
+            favTitle.insertAdjacentHTML(
+                "afterend",
+                '<ul id="favorites"></ul>'
+            );
+            const ol = document.getElementById("favorites");
+            favorites.forEach((c) => {
+                const li = document.createElement("li");
+                li.innerHTML = c.name;
+                li.className = c.class;
+                ol.appendChild(li);
+            });
+        </script>
+        <h3 class="three">
+            Why not give our delicious food menu a try also?
+        </h3>
+        <script>
+            const menu = [
+                {
+                    dt: "Crispy Grilled Cheese on Sourdough",
+                    dd: `A delicious blend of white Cheddar and mozzarella cheeses on sourdough bread, topped with a Parmesan butter spread.`,
+                },
+                {
+                    dt: "Chicken Caprese on Ciabatta",
+                    dd: `
+                  Stacked with craveable ingredients, including
+                slow-cooked chicken, mozzarella,
+                balsamic-marinated tomatoes, basil pesto and
+                spinach, all nestled between soft ciabatta bread.
+                Chickens are raised without the use of
+                antibiotics.
+                  `,
+                },
+                {
+                    dt: "Eggs and Gouda Protein Box",
+                    dd: `
+                Two cage-free hard-boiled eggs paired with Gouda
+                and multigrain crackers, plus a blend of dried
+                apricots and apples, a peanut-butter spread, salt
+                and pepper, make this the balanced protein-packed
+                box good for all day enjoyment.
+                  `,
+                },
+            ];
+            const menuTitle = document.querySelector(".three")
+            menuTitle.insertAdjacentHTML("afterend", '<dl id="menu"></dl>')
+            const dl = document.getElementById("menu")
+            menu.forEach(i=> {
+              const dt = document.createElement("dt")
+              dt.innerText = i.dt
+              const dd = document.createElement("dd")
+              dd.innerText = i.dd
+              dl.appendChild(dt)
+              dl.appendChild(dd)
+            })
+        </script>
+        <h4 id="price-list">
+            <span id="coffee">Coffee</span
+            ><span id="shop">Shop</span>
+            Food Price List
+        </h4>
+        <script>
+          const list = document.getElementById("price-list")
+          list.style.color = "green"
+        </script>
+        <table>
+            <tr>
+                <th>Item No.</th>
+                <th>Food Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Crispy Grilled Cheese on Sourdough</td>
+                <td>$4.99</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chicken Caprese on Ciabatta</td>
+                <td>$12.99</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Eggs and Gouda Protein Box</td>
+                <td>$10.99</td>
+            </tr>
+        </table>
+
+        <footer>
+            <h2>Contact Us</h2>
+
+            <span id="email">hoboken@coffeeshop.com</span> |
+            <span id="phone"> +1(203)345-2209</span> |
+            <span>Working Hours: 9AM - 9PM</span> |
+            <span>123, CoffeeShop Street, Hoboken, NJ, USA</span>
+            <div id="websiteColorChangeMenu"></div>
+            <p id="todayDate"></p>
+        </footer>
+    </body>
+    <script>
+      //make color changing buttons
+      const menuDiv = document.getElementById("websiteColorChangeMenu")
+      const linenBtn = document.createElement("button")
+      const blueBtn = document.createElement("button")
+      linenBtn.innerText="Change color 1"
+      blueBtn.innerText="Change color 2"
+      linenBtn.className="btn info"
+      blueBtn.className="btn info"
+      blueBtn.style.marginLeft = "1em"
+      menuDiv.appendChild(linenBtn)
+      menuDiv.appendChild(blueBtn)
+      linenBtn.addEventListener("click", () => document.body.style.backgroundColor = "linen")
+      blueBtn.addEventListener("click", () => document.body.style.backgroundColor = "lightblue")
+
+      //put todays date
+      const dateP = document.getElementById("todayDate")
+      const nowDate = new Date()
+      dateP.innerText = nowDate.toDateString()
+    </script>
+</html>

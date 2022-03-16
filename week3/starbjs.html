@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--Styling webpage using CSS-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Starbucks, Los Angeles</title>
+    </head>
+
+    <body>
+        <h1 id="uniquehd">Welcome to Starbucks, Los Angeles</h1>
+        <p>
+            Starbucks Corporation is an American multinational chain of
+            coffeehouses and roastery reserves headquartered in Seattle,
+            Washington. As the world's largest coffeehouse chain, Starbucks is
+            seen to be the main representation of the United States'second wave
+            of coffee culture. As of early 2020, the company operates over
+            30,000 locations worldwide in more than 70 countries. Starbucks
+            locations serve hot and cold drinks,whole-bean coffee, microground
+            instant coffee known as VIA, espresso, caffe latte, full- and
+            loose-leaf teas including Teavana tea products, Evolution Fresh
+            juices, Frappuccino beverages, La Boulange pastries, and snacks
+            including items such as chips and crackers; some offerings
+            (including their annual fall launch of the Pumpkin Spice Latte) are
+            seasonal or specific to the locality of the store.
+        </p>
+        <h3>Our main menu categories are:</h3>
+        <script>
+            const catagories = ["Coffee", "Food", "At Home Coffee"];
+            let ulnode = document.querySelector("h3");
+            ulnode.insertAdjacentHTML("afterend", "<ul></ul>");
+            let ul = document.querySelector("ul");
+            catagories.forEach((c) => {
+                const li = document.createElement("li");
+                li.textContent = c;
+                ul.appendChild(li);
+            });
+        </script>
+        <h3>Our customers’ top three favorites Hot Coffees are:</h3>
+        <script>
+            const favorites = ["Caffè Americano", "Cappuccino", "Espresso"];
+            ulnode = document.querySelector("h3:nth-of-type(2)");
+            ulnode.insertAdjacentHTML("afterend", "<ul></ul>");
+            ul = document.querySelector("ul:nth-of-type(2)");
+            catagories.forEach((c) => {
+                const li = document.createElement("li");
+                li.textContent = c;
+                ul.appendChild(li);
+            });
+        </script>
+        <h3>Why not give our delicious food menu a try also?</h3>
+        <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)-->
+        <script>
+            const foods = ["Ham and Swiss Panini", "Crispy Grilled Cheese Sandwich", "Chicken Caprese Panini"];
+            ulnode = document.querySelector("h3:nth-of-type(3)");
+            ulnode.insertAdjacentHTML("afterend", "<ul></ul>");
+            ul = document.querySelector("ul:nth-of-type(3)");
+            catagories.forEach((c) => {
+                const li = document.createElement("li");
+                li.textContent = c;
+                ul.appendChild(li);
+            });
+        </script>
+
+        <h4 id="priceheader">Food Price List</h4>
+        <table class="center">
+            <tr>
+                <th>Item Number</th>
+                <th>Food</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ham and Swiss Panini</td>
+                <td>$9</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Cripsy Grilled Cheese Sandwhich</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Chicken Caprese Panini</td>
+                <td>$12</td>
+            </tr>
+        </table>
+    </body>
+</html>

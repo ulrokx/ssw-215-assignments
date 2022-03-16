@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>EggRick, Stevens Campus</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>EggRick, Stevens Campus</h1>
+        <nav>
+            <ul id="nav-ul">
+                <li><a href="#" class="nav-select">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img src="eggs.jpg" alt="eggs" />
+        <div class="row">
+            <div>
+                <h3 class="bfmenu">Breakfast Menu</h3>
+                <table>
+                    <tr>
+                        <td>Super Scrambled Eggs</td>
+                        <td class="bfprice">$8.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Super Scrambled Eggs"
+                                data-price="8.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eggs and Toast</td>
+                        <td class="bfprice">$6.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Eggs and Toast"
+                                data-price="6.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Avocado Toast w/ Eggs</td>
+                        <td class="bfprice">$9.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Avocado Toast w/ Eggs"
+                                data-price="9.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Boiled Egg Bonanza</td>
+                        <td class="bfprice">$8.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Boiled Egg Bonanza"
+                                data-price="8.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <button class="convertbtn" data-menu="bf">
+                    Convert to Pound Sterling
+                </button>
+            </div>
+            <div>
+                <h3 class="lnmenu">Lunch Menu</h3>
+                <table>
+                    <tr>
+                        <td>Grilled Cheese w/ Eggs</td>
+                        <td class="lnprice">$11.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Grilled Cheese w/ Eggs"
+                                data-price="11.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Egg Tacos with Guacamole</td>
+                        <td class="lnprice">$11.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Egg Tacos with Guacamole"
+                                data-price="11.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eggcelent Crêpes with Ham</td>
+                        <td class="lnprice">$10.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Eggcelent Crêpes with Ham"
+                                data-price="10.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Century Eggs on Sourdough</td>
+                        <td class="lnprice">$12.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Century Eggs on Sourdough"
+                                data-price="12.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <button class="convertbtn" data-menu="ln">
+                    Convert to Pound Sterling
+                </button>
+            </div>
+            <div>
+                <h3 class="dnmenu">Dinner Menu</h3>
+                <table>
+                    <tr>
+                        <td>Steak and Eggs</td>
+                        <td class="dnprice">$15.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Steak and Eggs"
+                                data-price="15.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fil-egg Mignon</td>
+                        <td class="dnprice">$18.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Fil-egg Mignon"
+                                data-price="18.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bacon-Egg-Tomato Sandwich</td>
+                        <td class="dnprice">$14.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Bacon-Egg-Tomato Sandwich"
+                                data-price="14.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mega-egg Surprise</td>
+                        <td class="dnprice">$14.99</td>
+                        <td>
+                            <button
+                                class="cart-btn"
+                                data-name="Mega-egg Surprise"
+                                data-price="14.99"
+                            >
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <button class="convertbtn" data-menu="dn">
+                    Convert to Pound Sterling
+                </button>
+            </div>
+        </div>
+        <table id="cart"></table>
+        <h5 id="price-text">Price: $<span id="price"></span></h5>
+        <button class="orderbtn">Place order.</button>
+        <script>
+            const state = {
+                bf: "d",
+                ln: "d",
+                dn: "d",
+                hasOrdered: false,
+                cartTotal: 0,
+                cart: [],
+            };
+            const cartBtns =
+                document.querySelectorAll(".cart-btn");
+            const cart = document.getElementById("cart");
+            const priceTag = document.getElementById("price");
+            const priceContainer =
+                document.getElementById("price-text");
+
+            let rate = 0.71;
+
+            const bfconvert = (event) => {
+                const prefix = event.target.dataset.menu;
+                const toChange = document.querySelectorAll(
+                    `.${prefix}price`
+                );
+                const curr = state[prefix];
+                toChange.forEach(
+                    (b) =>
+                        (b.textContent = `${
+                            curr === "d" ? "£" : "$"
+                        }${
+                            //swap unit
+                            (
+                                parseFloat(
+                                    b.textContent.replace(
+                                        /\$|£/g,
+                                        ""
+                                    ),
+                                    10
+                                ) *
+                                (curr === "d" ? rate : 1 / rate)
+                            ) //depending on the current state
+                                .toFixed(2)
+                        }`)
+                );
+                state[prefix] = curr === "d" ? "p" : "d";
+            };
+
+            document
+                .querySelectorAll(".convertbtn")
+                .forEach((b) =>
+                    b.addEventListener("click", bfconvert)
+                );
+            document
+                .querySelector(".orderbtn")
+                .addEventListener("click", (event) => {
+                    console.log(state);
+                    if (!state.hasOrdered) {
+                        const message =
+                            document.createElement("p");
+                        message.style.textAlign = "center";
+                        message.style.fontSize = "x-large";
+                        message.textContent =
+                            "We’ve received your order. Your order will be ready for pick up in 5 minutes.";
+                        document
+                            .querySelector(".row")
+                            .after(message);
+                        state.hasOrdered = true;
+                        event.target.disabled = true;
+                        cartBtns.forEach(
+                            (b) =>
+                                (b.parentNode.style.display =
+                                    "none")
+                        );
+                    }
+                });
+            const handleCartBtn = (e) => {
+                const { name, price } = e.target.dataset;
+                if (state.cartTotal == 0) {
+                    cart.style.visibility = "visible";
+                    priceTag.style.visibility = "visible";
+                    priceContainer.style.visibility = "visible";
+                }
+                let found = false;
+                state.cartTotal += parseFloat(price);
+                priceTag.innerText = state.cartTotal.toFixed(2);
+                state.cart.forEach((v, i) => {
+                    if (v.name === name) {
+                        state.cart[i].quantity += 1;
+                        found = true;
+                        const qToChange =
+                            document.getElementById(`q-${i}`);
+                        const quant = parseInt(
+                            qToChange.innerText,
+                            10
+                        );
+                        qToChange.innerText = quant + 1;
+                    }
+                });
+                if (!found) {
+                    state.cart.push({ name, quantity: 1 });
+                    const cartRow = document.createElement("tr");
+                    const quantity =
+                        document.createElement("td");
+                    const itemName =
+                        document.createElement("td");
+                    const itemPrice =
+                        document.createElement("td");
+                    quantity.innerText = 1;
+                    quantity.id = `q-${state.cart.length - 1}`;
+                    itemName.innerText = e.target.dataset.name;
+                    itemPrice.innerText = e.target.dataset.price;
+                    cartRow.append(
+                        quantity,
+                        itemName,
+                        itemPrice
+                    );
+                    cart.appendChild(cartRow);
+                }
+            };
+            cartBtns.forEach((b) =>
+                b.addEventListener("click", handleCartBtn)
+            );
+        </script>
+    </body>
+</html>
