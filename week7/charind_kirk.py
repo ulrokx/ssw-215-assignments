@@ -4,12 +4,15 @@
 #   https://docs.python.org/3/library/typing.html
 
 from typing import Dict, List, Tuple
+fruits: str
+try:
+    raw = open("fruits.txt", "rt")
+    fruits = raw.read()
+    raw.close()
+    fruits = fruits[1:-1]  # Get rid of beginning and ending quotation marks
+except IOError:
+    fruits = "Mango banana apple pear Banana grapes strawberry Apple pear mango banana Kiwi apple mango strawberry"
 
-# fruits = "Mango banana apple pear Banana grapes strawberry Apple pear mango banana Kiwi apple mango strawberry"
-raw = open("fruits.txt")
-fruits = raw.read()
-raw.close()
-fruits = fruits[1:-1] # Get rid of beginning and ending quotation marks
 
 def char_index(string: str) -> List[int]:
     """Returns the index values of each occurance of the character 'r'"""
@@ -23,7 +26,7 @@ def char_index(string: str) -> List[int]:
 
 
 def count_vc(string: str) -> Tuple[int, int]:
-    """Returns the number of vowels and consonants in the given string"""
+    """Returns the tuple with the number of vowels and consonants in the given string"""
     vowels = consonants = 0
     for v in string:
         if v in "aeiou":
@@ -33,7 +36,6 @@ def count_vc(string: str) -> Tuple[int, int]:
     print(
         f"There are {vowels} vowels and {consonants} consonants in your string.")
     return (vowels, consonants)
-
 
 def count_vowels(string: str) -> Dict[str, int]:
     """Returns a dictionary with the counts of each vowel in the given string"""
